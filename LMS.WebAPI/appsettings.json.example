@@ -1,0 +1,21 @@
+{
+  "Logging": {
+    "LogLevel": {
+      "Default": "Information",
+      "Microsoft.AspNetCore": "Warning"
+    }
+  },
+  "ApiSettings": {
+    "ApiKey": "YOUR_API_KEY_HERE"
+  },
+  "JwtConfig": {
+    "Issuer": "http://localhost:5231",
+    "Audience": "http://localhost:5231",
+    "Key": "YOUR_JWT_KEY_HERE",
+    "DurationInMinutes": 30
+  },
+  "AllowedHosts": "*",
+  "ConnectionStrings": {
+    "DefaultConnection": "YOUR_CONNECTION_STRING_HERE"
+  }
+}
