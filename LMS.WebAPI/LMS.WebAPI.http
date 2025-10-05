@@ -1,0 +1,50 @@
+@LMS.WebAPI_HostAddress = https://localhost:7298
+@rootURL = http://localhost:5231
+
+GET {{rootURL}}/weatherforecast/
+Accept: application/json
+
+###
+GET {{rootURL}}/api/users
+Accept: application/json
+
+
+###
+GET {{rootURL}}/api/users/5
+Accept: application/json
+
+###
+POST {{rootURL}}/api/users/register
+Content-Type: application/json
+{
+    "fullName": "Random",
+    "email": "nandi255345@gmail.com",
+    "password": "Nandini@10622658.",
+    "role": "Admin"
+}
+
+###
+PUT {{rootURL}}/api/users/5
+Content-Type: application/json
+{
+    "fullName": "Nandini",
+    "email": "nandi255345@gmail.com",
+    "password": "Nandini@106258.",
+    "role": "Instructor"
+}
+
+###
+DELETE {{rootURL}}/api/users/1
+
+
+###
+
+GET {{LMS.WebAPI_HostAddress}}/api/v2/CourseV/3
+
+
+###
+
+@courseId=0
+GET {{LMS.WebAPI_HostAddress}}/api/courses/3/exams
+
+###
